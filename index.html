@@ -9,10 +9,13 @@
   </head>
   <body>
     <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-    History length: <span id="histLen"></span>
+    <ul>
+    <li>We are using Node.js <span id="node-version"></span>,</li>
+    <li>Chromium <span id="chrome-version"></span>,</li>
+    <li>and Electron <span id="electron-version"></span>.</li>
+    <li>Current url: <a id="curUrl"></a></li>
+    <li>History length: <span id="histLen"></span></li>
+  </ul>
     <button type="button" data-fn="replace">location.replace</button>
     <button type="button" data-fn="reload">location.reload</button>
     <!-- You can also require other files to run in this process -->

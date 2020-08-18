@@ -12,9 +12,12 @@
       b.addEventListener("click", () => {
         const fnName = b.getAttribute("data-fn");
         if(fnName){
-          window.location[fnName](".");
+          window.location[fnName](location.href);
         }
       }, false);
     }
     document.getElementById("histLen").textContent = history.length;
+    const curUrl = document.getElementById("curUrl");
+    curUrl.textContent = curUrl.href=location.href;
+    
   })();
