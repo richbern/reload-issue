@@ -12,7 +12,7 @@
       b.addEventListener("click", () => {
         const fnName = b.getAttribute("data-fn");
         if(fnName){
-          window.location[fnName](location.href);
+          window.location[fnName](location.href.replace(location.hash, "") + "#" + history.length);
         }
       }, false);
     }
