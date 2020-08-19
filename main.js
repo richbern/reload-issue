@@ -16,6 +16,9 @@ function createWindow () {
   //mainWindow.loadFile('index.html')
   mainWindow.loadURL("https://raw.githack.com/richbern/reload-issue/master/index.html");
 
+  mainWindow.webContents.addListener("will-navigate", () => {
+    console.log("am i hit");
+  });
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
